@@ -1,0 +1,10 @@
+[template]
+src = "hello-world.conf.template"
+dest = "/hello-world.conf"
+
+# The key below must be changed to match how you named your
+# service in the StackEngine CAC.  
+keys = [
+"apps/SE_SERVICE_DISCOVERY_KEY/containers"
+]
+reload_cmd = "runsv restart confd"

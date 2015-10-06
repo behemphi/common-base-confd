@@ -1,0 +1,10 @@
+# Configures the /dev/null highly scalable write-only database.
+
+database:
+  cluster:
+    targets: 
+        [ {{$service := "/apps/SE_SERVICE_DISCOVERY_KEY/containers/*"}}
+        gratuitous text = {{.Key}}
+        {{range gets (print $service)}}
+        '{{.Value}}',{{end}}
+        ]
