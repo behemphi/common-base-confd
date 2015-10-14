@@ -110,7 +110,7 @@ database:
 # Compatibility 
 
 * [x] StackEngine Ecosystem
-* [] General Docker Ecosystem
+* [ ] General Docker Ecosystem
 
 This images directly leverages the StackEngine CAC's Service Discovery 
 as a backend to `confd`.
