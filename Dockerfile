@@ -18,7 +18,6 @@ ADD \
 RUN \
     mkdir -pv /etc/sv/confd && \
     chmod +x /etc/sv/confd/run && \
-    chmod +x /usr/bin/confd && \
     mkdir -pv /etc/confd/conf.d && \
     mkdir -pv /etc/confd/templates && \
     ln -sv /etc/sv/confd /service
