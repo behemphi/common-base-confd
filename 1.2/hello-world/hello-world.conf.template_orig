@@ -1,0 +1,10 @@
+# Configures the /dev/null highly scalable write-only database.
+
+database:
+  cluster:
+    targets: 
+        [ {{$service := "STACKENGINE_SERVICE_DISCOVERY_KEY/*"}}
+        gratuitous text = {{.Key}}
+        {{range gets (print $service)}}
+        '{{.Value}}',{{end}}
+        ]
