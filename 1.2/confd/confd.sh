@@ -16,7 +16,7 @@ sed s#STACKENGINE_SERVICE_DISCOVERY_KEY#$STACKENGINE_SERVICE_DISCOVERY_KEY# \
 # Okay now we can run confd 
 exec /usr/bin/confd \
     -backend stackengine \
-    -node $STACKENGINE_LEADER_IP:8443 \
+    -node $STACKENGINE_LEADER_IP:$STACKENGINE_LEADER_PORT \
     -scheme https \
     -auth-token $STACKENGINE_API_TOKEN \
     -interval 5
